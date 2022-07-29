@@ -6,12 +6,12 @@ WORKDIR /app
 
 ## Step 2:
 # Copy source code to working directory
-COPY . flask_app/app.py /app/
+COPY . app.py /app/
 
 ## Step 3:
 # Install packages from requirements.txt
 # hadolint ignore=DL3013
-RUN RUN pip install --upgrade pip
+RUN pip install --no-cache-dir -r requirements.txt
 
 ## Step 4:
 # Expose port 80
