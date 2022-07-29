@@ -1,4 +1,4 @@
-[<include a CircleCI status badge, here>](https://app.circleci.com/projects/project-dashboard/github/Divine4212/671782baad9331e6de72e2f000b902599d9c4517)
+(https://app.circleci.com/projects/project-dashboard/github/Divine4212/671782baad9331e6de72e2f000b902599d9c4517)
 
 ## Project Overview
 
