@@ -1,4 +1,4 @@
-! [https://app.circleci.com/pipelines/github/Divine4212/Udacity-Project-4]
+[![CircleCI](https://circleci.com/gh/Divine4212/Udacity-Project-4.svg?style=svg&0cb32398d0cd4e0dbe3d6744e1cd27300c7f2dd5)](https://circleci.com/gh/circleci/circleci-docs)
 
 ## Project Overview
 
