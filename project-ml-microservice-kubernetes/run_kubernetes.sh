@@ -4,13 +4,11 @@
 
 # Step 1:
 # This is your Docker ID/path
-# dockerpath=<>
-dockerpath=vthorn/project4
+dockerpath=divine2142/udacity
 
 # Step 2
 # Run the Docker Hub container with kubernetes
 kubectl run udacity --image=$dockerpath --port=80
-
 
 # Step 3:
 # List kubernetes pods
