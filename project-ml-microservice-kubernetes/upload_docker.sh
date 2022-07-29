@@ -6,10 +6,15 @@
 # Step 1:
 # Create dockerpath
 # dockerpath=<your docker ID/path>
+dockerpath=divine2142/udacity
 
 # Step 2:  
 # Authenticate & tag
-echo "Docker ID and Image: $dockerpath"
+export DOCKER_ID_USER="divine2142"
+docker login
+docker tag udacity $DOCKER_ID_USER/udacity
+docker push $DOCKER_ID_USER/udacity
 
 # Step 3:
 # Push image to a docker repository
+docker push divine2142/udacity
