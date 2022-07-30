@@ -2,14 +2,14 @@
 
 ### Project Tasks
 
-Your project goal is to operationalize this working, machine learning microservice using [kubernetes](https://kubernetes.io/), which is an open-source system for automating the management of containerized applications. In this project you will:
-* Test your project code using linting
-* Complete a Dockerfile to containerize this application
-* Deploy your containerized application using Docker and make a prediction
-* Improve the log statements in the source code for this application
-* Configure Kubernetes and create a Kubernetes cluster
-* Deploy a container using Kubernetes and make a prediction
-* Upload a complete Github repo with CircleCI to indicate that your code has been tested
+in this project, the goal is to operationalize this working, machine learning microservice using [kubernetes](https://kubernetes.io/), which is an open-source system for automating the management of containerized applications. In this project, this processes will be carried out:
+1 Test project code using linting
+2 Complete a Dockerfile to containerize this application
+3 Deploy containerized application using Docker and make a prediction
+4 Improve the log statements in the source code for this application
+5 Configure Kubernetes and create a Kubernetes cluster
+6 Deploy a container using Kubernetes and make a prediction
+7 Upload a complete Github repo with CircleCI to indicate that the code has been tested
 
 **The final implementation of the project will showcase your abilities to operationalize production microservices.**
 
@@ -36,7 +36,27 @@ source .devops/bin/activate
 
 ### Kubernetes Steps
 
-* Setup and Configure Docker locally
-* Setup and Configure Kubernetes locally
-* Create Flask app in Container
-* Run via kubectl
+1 Setup and Configure Docker locally
+* Install docker [refer to link - https://docs.docker.com/engine/install/ubuntu/ for reference].
+* Run ./run_docker.sh after configuration.
+* Run docker ps [this is to check if docker is running].
+* Run ./make_prediction.sh on another terminal to make prediction.
+* copy/paste the logging info at terminal to output_txt_files/docker_out.txt
+
+2 Setup and Configure Kubernetes locally
+* Install Minikube refer to link - https://minikube.sigs.k8s.io/docs/start/ for reference].
+* Run ./run_kubernetes.sh after configuration
+* Run ./make_prediction.sh on another terminal to make prediction.
+* copy/paste the logging info at terminal to output_txt_files/docker_out.txt
+
+3 Delete Cluster
+* If you want to delete the kubernetes cluster just run this command 'minikube delete'. 
+* You can also stop the kubernetes cluster with this command 'minikube stop'.
+
+4 CircleCI Integration
+* Create a CircleCI Account (use your Github account for a better integration)
+* Create a config.yml file
+* Add a status badge using this template: [![<github_username>](https://circleci.com/gh/<github_username>/<repository>.svg?style=svg)](https://circleci.com/gh/<github_username>/<repository>) replace <github_username> and <repository> with your data. e.g: [![danilobrinu](https://circleci.com/gh/danilobrinu/udacity-cloud-devops-engineer-project-4.svg?style=svg)](https://circleci.com/gh/danilobrinu/udacity-cloud-devops-engineer-project-4)
+* paste the link on top of the readme file.
+
+
